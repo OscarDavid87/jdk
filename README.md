@@ -102,12 +102,8 @@ Vemos como se ejecutaron los comandos y modificamos las variables, como resultad
 
 
 
-# Instalación de Maven en el SO
+# Instalar Apache Maven con apt
 
-
-## Instalar Apache Maven
-
-### Instalar Apache Maven con apt
 
  Instalar Maven en Ubuntu usando apt es un proceso simple y directo.
 
@@ -118,34 +114,18 @@ Vemos como se ejecutaron los comandos y modificamos las variables, como resultad
 ```
 ```
  sudo apt install maven
+ 
 ```
 
+ <img src="ImagenesMaven/Maven 1.png" alt="Maven 1">
+ 
  Para verificar la instalación, ejecute mvn -version:
 ```
  mvn -version
 ```
+<img src="ImagenesMaven/Maven 1.1.png" alt="Maven 1.1">
 
- La salida debería verse así:
-
-```
-Apache Maven 3.6.3
- Maven home: /usr/share/maven
- Java version: 11.0.7, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
- Default locale: en_US, platform encoding: UTF-8
- OS name: "linux", version: "5.4.0-29-generic", arch: "amd64", family: "unix"
-```
-
- Eso es todo. Maven ahora está instalado en su sistema y puede comenzar a usarlo.
-
-
-
-
-
-
-
-
-
-
+Comprobamos que tenemos el Maven instalado y la versión del mismo.  
 
 
 ### Instalar una versión concreta de Apache Maven
@@ -159,6 +139,10 @@ Apache Maven 3.6.3
 wget https://www.apache.org/dist/maven/maven-3/3.8.2/binaries/apache-maven-3.8.2-bin.tar.gz -P /tmp
 ```
 
+
+<img src="ImagenesMaven/Maven 2.png" alt="Maven 2">
+
+
  Una vez que se complete la descarga, extraiga el archivo en el directorio /opt
 ```
 sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt
@@ -168,7 +152,8 @@ sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt
 ```
 sudo ln -s /opt/apache-maven-3.8.2 /opt/maven
 ```
- Cuando se lanza una nueva versión, puede actualizar su instalación de Maven desempaquetando la última versión y cambiando el enlace simbólico para señalarla.
+
+<img src="ImagenesMaven/Maven 3.png" alt="Maven 3">
 
 
 __Establecer variables de entorno__
@@ -185,7 +170,12 @@ Pega el siguiente código:
 ```
 
  Guarde y cierre el archivo. Este script se utilizará al iniciar el shell.
+ 
+ <img src="ImagenesMaven/Maven 4.png" alt="Maven 4">
+ 
+ Ejecutamos el código anterior, guardamos y salimos. 
 
+ 
  Haga que el script sea ejecutable con chmod:
 
 ```
@@ -196,6 +186,9 @@ Pega el siguiente código:
  source /etc/profile.d/maven.sh
 ```
 
+<img src="ImagenesMaven/Maven 5.png" alt="Maven 5">
+
+
 __Verificar la instalación__
 
 Para verificar que Maven está instalado, use el mvn -version que imprimirá la versión de Maven:
@@ -204,14 +197,6 @@ Para verificar que Maven está instalado, use el mvn -version que imprimirá la 
 mvn -version
 ```
 
-Debería ver algo similar a lo siguiente:
+<img src="ImagenesMaven/Maven 5.png" alt="Maven 5">
 
-```
-Apache Maven 3.8.2 (cecedd343002696d0abb50b32b541b8a6ba2883f)
- Maven home: /opt/maven
- Java version: 11.0.7, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
- Default locale: en_US, platform encoding: UTF-8
- OS name: "linux", version: "5.4.0-29-generic", arch: "amd64", family: "unix"
-```
-
-Eso es todo. La última versión de Maven ahora está instalada en su sistema Ubuntu.
+Verificamos que Maven está instalado en la versión 3.8.2 
