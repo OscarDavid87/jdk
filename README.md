@@ -15,9 +15,9 @@ e instalamos Java con este comando:
   sudo apt-get install default-jdk
 ```
 
+<img src="ImagenesJDK/1.png" alt="1">
 
-
-
+En esta imagen vemos como se ejecutan los comandos anteriormente comentados. Podemos ver la ejecución de la instalación, una vez finalizada pasamos al siguiente comando 
 
 
 
@@ -27,6 +27,7 @@ comprobamos que tenemos instalado Java en nuestro sistema solo debemos de ejecut
 ```
 
 
+<img src="ImagenesJDK/java - version 1.1.png" alt="java - version 1.1">
 
 
 
@@ -35,8 +36,9 @@ comprobamos que tenemos instalado Java en nuestro sistema solo debemos de ejecut
 
 ## ¿Cómo instalar una versión específica de Java?
 
-Para instalar Ubuntu Java Open JDK ("la que utilizaremos en 1º").
- - OpenJDK:
+Para instalar Ubuntu Java Open JDK utilizamos los siguientes comandos:
+Para OpenJDK 11, 9 y 8 respectivamente:
+
    - 11
    ```
    sudo apt install openjdk-11-jdk
@@ -51,21 +53,23 @@ Para instalar Ubuntu Java Open JDK ("la que utilizaremos en 1º").
    ```
 
 
+<img src="ImagenesJDK/2.2.png" alt="2.2">
 
+Vemos que al intentar la versión 9 nos da un fallo. Pasamos directamente a instalar la versión 8.
 
-
+<img src="ImagenesJDK/2.3.png" alt="2.3">
 
 La versión que se debe de trabajar es la versión 8. Para ello verificaremos la versión de java que se esta ejecutando con la sentencia:
 
 ```console
   java --version
 ```
-En caso que no se ejecuta la versión 8 se debe configurar las variables de entorno.
+
+<img src="ImagenesJDK/3.1.png" alt="3.1">
 
 
 
-
-
+Efectivamente vemos que tenemos instalada la versión 11.0.11, como no se ejecuta la versión 8 que la que queremos debemos configurar las variables de entorno
 
 
 ## Configuración de las variables de entorno
@@ -92,9 +96,9 @@ sudo update-alternatives --config java
  y selecciona la version _8_.
 
 
+<img src="ImagenesJDK/3.2.png" alt="3.2">
 
-
-
+Vemos como se ejecutaron los comandos y modificamos las variables, como resultados tenemos la versión 8 de java. 
 
 
 
