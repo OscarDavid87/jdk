@@ -32,6 +32,7 @@ comprobamos que tenemos instalado Java en nuestro sistema solo debemos de ejecut
 
 
 
+
 ## ¿Cómo instalar una versión específica de Java?
 
 Para instalar Ubuntu Java Open JDK ("la que utilizaremos en 1º").
@@ -71,7 +72,7 @@ En caso que no se ejecuta la versión 8 se debe configurar las variables de ento
 
  El siguiente paso consiste en establecer  las variables de entorno. Es necesario porque cuando se usa Java, Linux necesita saber dónde está ubicado el programa para ejecutarlo y qué versión de Java usar de forma predeterminada. Para modificar esto, usaremos el editor de texto nano. Primero, abra el archivo en Nano.
 
-### Listar la versiones de OpenJDK instaladas
+### Listar las versiones de OpenJDK instaladas
 
  Ejecuta el siguiente comando para verificar que se han descargado las diferentes versiones de OpenJDK.
 
