@@ -26,9 +26,9 @@ comprobamos que tenemos instalado Java en nuestro sistema solo debemos de ejecut
   java --version
 ```
 
-
+<div aling="center">
 <img src="ImagenesJDK/java - version 1.1.png" alt="java - version 1.1">
-
+<div>
 
 
 
